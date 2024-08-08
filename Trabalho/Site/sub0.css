@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OutFit', sans-serif;
+}
+body { 
+    background: url('IMG/onepage2.png') no-repeat center center fixed; 
+    background-size: 100% 100%;
+
+}
+.form-l {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 10vw;
+    margin-left: -30vw;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.form-r {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 10vw;
+    margin-left: -30vw;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+h1, h2, h3{
+    color: #ffd817;
+}
+.tit {
+    margin-top: 0vw;
+    margin-left: 10vw;
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    margin-top: 10vw;
+    border-radius: 100vw;
+    margin-top: 0vw;
+    margin-left: 16vw;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Busca</title>
+        <link rel="stylesheet" href="sub1.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <nav class="menu-lateral">
+            <div class="btn-expandir">
+               <i class="bi bi-list" id="btn-exp"></i>
+            </div>
+         
+         <ul>
+            <li class="item-menu">
+               <a href="tela.php">
+                  <span class="icon"><i class="bi bi-house"></i></span>
+                  <span class="txt-link">Inicio</span>
+               </a>
+            </li>
+            <li class="item-menu">
+               <a href="sub1.html">
+                  <span class="icon"><i class="bi bi-book"></i></span>
+                  <span class="txt-link">Livros</span>
+               </a>
+            </li>
+            <li class="item-menu">
+                <a href="sub2.html">
+                   <span class="icon"><i class="bi bi-cash-coin"></i></span>
+                   <span class="txt-link">Empréstimos</span>
+                </a>
+             </li>
+            <li class="item-menu">
+               <a href="#">
+                  <span class="icon"><i class="bi bi-person-circle"></i></span>
+                  <span class="txt-link">Conta</span>
+               </a>
+            </li>
+         </ul>
+         </nav>
+         <script src="menu.js"></script>
+        <header>
+            <h1>Let's Read a Book</h1>
+        </header>
+        <section class="featured-search">
+            <form>
+                <input id="search-input" type="text" name="search" placeholder="Search books.." onkeyup="searchBooks()">
+             </form>
+        </section>
+
+        <section class="featured-books">
+            <h2 style="color: white;">Livros Disponíveis</h2>
+            <div id="book-list-container" class="book-list">              
+                    <div class='book-item'>
+                        <a href="https://www.amazon.com.br/Guerra-dos-Tronos-Cr%C3%B4nicas-Gelo/dp/8556510787">
+                        <button class="book-button">
+                        <img src="IMG/91+1SUO3vUL._SY466_.jpg" alt="livro1" width="200" height="300">
+                        <h3 style="color: #ffd817">As Crônicas de Gelo e Fogo Livro 1 : A guerra dos Tronos</h3>
+                        <p style="color: white;">Autor:George R.R. Martin</p>
+                        <p class="price">R$ 43.99</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Harry-Potter-Pedra-Filosofal-Rowling/dp/8532530788/ref=asc_df_8532530788/?tag=googleshopp00-20&linkCode=df0&hvadid=379795242161&hvpos=&hvnetw=g&hvrand=8137640747705738707&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1032132&hvtargid=pla-569630960550&psc=1">
+                        <button class="book-button">
+                        <img src="IMG/81ibfYk4qmL._SY466_.jpg" alt="livro2" width="200" height="300">
+                        <h3 style="color: #ffd817;">Harry Potter a Pedra Filosofal</h3>
+                        <p style="color: white;">Autor:J.K. Rowling</p>
+                        <p class="price">R$ 45.49</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Mar-Monstros-Vol-2-Jackson-Olimpianos/dp/8580575400/ref=asc_df_8580575400/?tag=googleshopp00-20&linkCode=df0&hvadid=379816121681&hvpos=&hvnetw=g&hvrand=6686864405604094678&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1032132&hvtargid=pla-840181346844&psc=1">
+                        <button class="book-button">
+                            <img src="IMG/A1rVWjvjcdL._AC_UF1000,1000_QL80_.jpg" alt="livro3" width="200" height="300">
+                            <h3 style="color: #ffd817;">Percy Jackson: O Mar de Monstros</h3>
+                            <p style="color: white;">Autor:Rick Riordan</p>
+                            <p class="price">R$ 30.99</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/coisa-Stephen-King/dp/8560280944">
+                        <button class="book-button">
+                        <img src="IMG/51z0s3GcvwL.jpg" alt="livro4" width="200" height="300">
+                        <h3 style="color: #ffd817;">It A Coisa</h3>
+                        <p style="color: white;">Stephen King</p>
+                        <p class="price">R$ 84.96</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/1984-George-Orwell/dp/8535914846">
+                        <button class="book-button">
+                        <img src="IMG/george-orwell-1984-4.jpg" alt="livro5" width="200" height="300">
+                        <h3 style="color: #ffd817;">1984</h3>
+                        <p style="color: white;">George Orwell</p>
+                        <p class="price">R$ 17.99</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Doutor-sono-Stephen-King/dp/8581052436">
+                        <button class="book-button">
+                        <img src="IMG/51LxVHwKzcL.jpg" alt="livro6" width="200" height="300">
+                        <h3 style="color: #ffd817;">Doutor Sono</h3>
+                        <p style="color: white;">Stephen King</p>
+                        <p class="price">R$ 51.00</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Pequeno-Pr%C3%ADncipe-Antoine-Saint-exupery/dp/852093014X">
+                        <button class="book-button">
+                        <img src="IMG/41FFuTW+BEL.jpg" alt="livro6" width="200" height="300">
+                        <h3 style="color: #ffd817;">O Pequeno Príncipe</h3>
+                        <p style="color: white;">Saint-Exupéry</p>
+                        <p class="price">R$ 19.90</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/chamado-Cthulhu-outros-contos/dp/6550970261">
+                        <button class="book-button">
+                        <img src="IMG/51vZhUOtJ+L.jpg" alt="livro6" width="200" height="300">
+                        <h3 style="color: #ffd817;">O Chamado de Cthulhu</h3>
+                        <p style="color: white;">H.P.Lovecraft</p>
+                        <p class="price">R$ 19.99</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Felipe-Trajet%C3%B3ria-Maiores-Youtubers-Brasil/dp/8555460867">
+                        <button class="book-button">
+                        <img src="IMG/71hx3FZYapL._AC_UF1000,1000_QL80_.jpg" alt="livro6" width="200" height="300">
+                        <h3 style="color: #ffd817;">Felipe Neto: A Tragetoria de um dos Maiores Youtubers do Brasil</h3>
+                        <p style="color: white;">Felipe Neto</p>
+                        <p class="price">R$ 12.00</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/Livro-dos-Insultos-L%C3%A9o-Lins/dp/6590068704">
+                        <button class="book-button">
+                        <img src="IMG/21cDrT7XMbL._AC_UF1000,1000_QL80_.jpg" alt="livro6" width="200" height="300">
+                        <h3 style="color: #ffd817;">O Livro dos Insultos</h3>
+                        <p style="color: white;">Léo Lins</p>
+                        <p class="price">R$ ----</p>
+                        </button>
+                        </a>
+                    </div>
+                    <div class="book-item">
+                        <a href="https://www.amazon.com.br/dp/655609157X/ref=sspa_dk_detail_0?psc=1&pd_rd_i=655609157X&pd_rd_w=GiLmL&content-id=amzn1.sym.dd14805d-2347-4e14-a8a3-4a68eee2b6c8&pf_rd_p=dd14805d-2347-4e14-a8a3-4a68eee2b6c8&pf_rd_r=5V3VBBT5YYEZMQNHGTT9&pd_rd_wg=p74gw&pd_rd_r=e801d071-1160-4916-b95a-844410e68ac5&s=books&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw">
+                        <button class="book-button">
+                            <img src="IMG/71zGixzFN7L._SY466_.jpg" alt="livro3" width="200" height="300">
+                            <h3 style="color: #ffd817;">Star Wars: Thrawn Ascendancy</h3>
+                            <p style="color: white;">Timothy Zahn</p>
+                            <p class="price">R$ 62.49</p>
+                        </button>
+                        </a>
+                    </div>
+            </div>
+                
+            </div>
+        </section>
+
+        <script src="sub1.js"></script>
+
+        
+    </body>
+</html>
