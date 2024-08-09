@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #201b2c;
+    color: #ffd817;
+    padding: 20px;
+    height: 100vh;
+    background: url('IMG/Sem título.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.price {
+    background-color: #ffd817;
+    color: #2b134b;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+nav.menu-lateral {
+    width: 60px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #ffd817;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    margin-left: -8px;
+    color: #ffd817;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+ul {
+    height: 110%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: 0.2s;
+}
+
+ul li.ativo {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+ul li.item-menu:hover {
+    background: rgba(0, 0, 0, 0.7);
+    margin-left: left;
+}
+
+ul li.item-menu a {
+    color: #ffd817;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    margin-bottom: 20px;
+    line-height: 5;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: 0.5s;
+}
+
+nav.nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 35px;
+    margin-left: -8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 0;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 60px;
+    margin: auto auto 30px;
+    max-width: 1400px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffd817;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    max-width: 10000px;
+    line-height: 1;
+}
+
+.cavalo {
+    margin-right: 75vw;
+    text-align: right;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffd900;
+    color: #2b134b;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d3c70b;
+}
+
+.book-button {
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+
+.book-button:hover {
+    background-color: #201b2c;
+}
+
+.emp-ebook-button,
+.emp-book-button {
+    justify-items: end;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: #b0afb0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    max-width: 10000px;
+    line-height: 1;
+}
+
+.button1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featured-books-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.book {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffd900;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.featured-books {
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.book-item {
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    width: 300px;
+}
+
+.book-item img {
+    max-width: 100;
+}
+
+.book-item h3,
+.book-item p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .featured-books {
+        padding: 10px;
+    }
+    .book-item {
+        width: 100%;
+    }
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-list .book {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ffd900;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 200px;
+}
+
+.book-list .book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-list .book h3,
+.book-list .book p {
+    margin: 0;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .book-list .book {
+        width: 100%;
+    }
+}
+
+.book-item {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.book-item:hover {
+    transform: scale(1.1);
+}
+
+.empress-item {
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.empress-item {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.empress-item:hover {
+    transform: scale(1.1);
+}
+
+.empress-item img {
+    max-width: 100;
+}
+
+.empress-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
