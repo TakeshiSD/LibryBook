@@ -1,0 +1,158 @@
+/* Inicio do Css de Navbar*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #EBDACC;
+    font-family: system-ui,-apple-system, Helvetica, Arial, sans-serif;
+}
+
+a { 
+    color: #EBDACC;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui,-apple-system, Helvetica, Arial, sans-serif;
+    background-color: #5a0f19;
+    height: 8vh;
+    width: 100%;
+    z-index:1000
+}
+ul {
+    z-index:1000
+}
+main {
+    background-size: cover;
+    height: 92vh;
+}
+
+.nada {
+    height: 33vh;
+    background-color: #db6676f6;
+}
+
+.Prim {
+    background-color: blanchedalmond;
+    margin-bottom: 30px;
+}
+
+.Segu {
+    background-color: aquamarine;
+}
+
+.box-menu {
+    background-color: #5a0f19;
+    opacity: 99%;
+    position: relative;
+    top: 12vh;
+    bottom: 12vh;
+    height: 68vh;
+    width: 600px;
+    left: 8vw;
+    z-index: 999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+
+#title1 {
+    padding-bottom: 25px;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #EBDACC;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #5a0f19;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+    
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+    
+}
+
+/* Fim do Css de Navbar */
