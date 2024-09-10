@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/Web/Home/css/navbar.css">
+        <link rel="stylesheet" href="/Web/Home/css/slide.css">
+        <link rel="stylesheet" href="/Web/Home/css/corpo-tela.css">
+        
+        <title>Home</title>
+        
+    </head>
+    <body>
+
+        <!--NavBar Fixa-->
+        
+        <header>
+            <nav>
+                <a class="logo" href="/">Libry Book</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="/">Livros</a></li>
+                    <li><a href="/">Empréstimos</a></li>
+                    <li><a href="/">Carrinho</a></li>
+                    <li><a href="/">Conta</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Fim NavBar-->
+
+        <!--Carrossel-->
+
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box primeiro">
+                    <a href="#"><img class="img-desktop" src="/Web/img/Manuel Gomes.jpg" alt=""></a>
+                    <a href="#"><img class="img-mobile" src="" alt=""></a>
+                </div>
+                <div class="slide-box segundo">
+                    <a href="#"><img class="img-desktop" src="/Web/img/planodefundo001.jpg" alt=""></a>
+                    <a href="#"><img class="img-mobile" src="" alt=""></a>
+                </div>
+                <div class="slide-box terceiro">
+                    <a href="#"><img class="img-desktop" src="/Web/img/OIP.jpg" alt=""></a>
+                    <a href="#"><img class="img-mobile" src="" alt=""></a>
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>        
+
+            </div>
+
+        </section>
+
+        <!--Fim Carrossel-->
+
+        <div class="space" id="zero1"></div>
+
+        <!--Corpo da Tela-->
+
+        <!-- OBS: Cada area da aba é controlada por uma main, e que a maiorias delas tem a altura de 100vh menos a altura da navbar-->
+
+        <section id="corpo-da-tela">
+
+            <!-- Seção de Autores (met1) -->
+            <main id="met1" class="main-00">
+                <h2>Autores em Destaque</h2>
+                <div class="autor">
+                    <div class="sub-autor">
+                        <img class="img-aut" src="/Web/img/icon.jfif" alt="Autor 1">
+                        <h3>Autor 1</h3>
+                        <p>Descrição curta sobre o Autor 1.</p>
+                    </div>
+                    <div class="sub-autor">
+                        <img class="img-aut" src="/Web/img/icon.jfif" alt="Autor 2">
+                        <h3>Autor 2</h3>
+                        <p>Descrição curta sobre o Autor 2.</p>
+                    </div>
+                    <div class="sub-autor">
+                        <img class="img-aut" src="/Web/img/icon.jfif" alt="Autor 3">
+                        <h3>Autor 3</h3>
+                        <p>Descrição curta sobre o Autor 3.</p>
+                    </div>
+                    <div class="sub-autor">
+                        <img class="img-aut" src="/Web/img/icon.jfif" alt="Autor 4">
+                        <h3>Autor 4</h3>
+                        <p>Descrição curta sobre o Autor 4.</p>
+                    </div>
+                    <div class="sub-autor">
+                        <img class="img-aut" src="/Web/img/icon.jfif" alt="Autor 5">
+                        <h3>Autor 5</h3>
+                        <p>Descrição curta sobre o Autor 5.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Seção de Venda de Livros (tag1) -->
+            <main id="tag1" class="main-92">
+                <h2>Livros à Venda</h2>
+                <div class="box-menu" id="box1">
+                    <div class="livro">
+                        <img src="/Web/img/livro1.jpg" alt="Livro 1">
+                        <h3>Livro 1</h3>
+                        <p>Descrição curta do Livro 1.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="livro">
+                        <img src="/Web/img/livro2.jpg" alt="Livro 2">
+                        <h3>Livro 2</h3>
+                        <p>Descrição curta do Livro 2.</p>
+                        <button>Comprar</button>
+                    </div>
+                    <div class="livro">
+                        <img src="/Web/img/livro3.jpg" alt="Livro 3">
+                        <h3>Livro 3</h3>
+                        <p>Descrição curta do Livro 3.</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Seção de Empréstimos de Livros (tag2) -->
+            <main id="tag2" class="main-92">
+                <h2>Livros para Empréstimo</h2>
+                <div class="box-menu" id="box2">
+                    <div class="livro">
+                        <img src="/Web/img/livro4.jpg" alt="Livro 4">
+                        <h3>Livro 4</h3>
+                        <p>Descrição curta do Livro 4.</p>
+                        <button>Solicitar Empréstimo</button>
+                    </div>
+                    <div class="livro">
+                        <img src="/Web/img/livro5.jpg" alt="Livro 5">
+                        <h3>Livro 5</h3>
+                        <p>Descrição curta do Livro 5.</p>
+                        <button>Solicitar Empréstimo</button>
+                    </div>
+                    <div class="livro">
+                        <img src="/Web/img/livro6.jpg" alt="Livro 6">
+                        <h3>Livro 6</h3>
+                        <p>Descrição curta do Livro 6.</p>
+                        <button>Solicitar Empréstimo</button>
+                    </div>
+                </div>
+            </main>
+
+        </section>
+        <!-- Fim Corpo da Tela -->
+
+        <!-- Scripts -->
+        <script src="/Web/Home/js/mobile-navbar.js"></script>
+        <script src="/Web/Home/js/slide.js"></script>
+
+    </body>
+</html>
