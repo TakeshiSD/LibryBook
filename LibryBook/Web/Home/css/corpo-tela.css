@@ -1,0 +1,270 @@
+/* Estilo Geral para Corpo da Tela */
+#corpo-da-tela {
+    padding: 2rem;
+    background-color: #f8f9fa;
+}
+
+.space {
+    background-color:#5a0f19;
+}
+
+#zero1 {
+    height: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Estilo da Seção de Atalhos */
+
+.main-00 .atalho {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sub-atalho {
+    text-align: center;
+    width: 180px;
+}
+
+.img-atl {
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-atl:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo da Seção de Autores */
+
+.main-00 .autor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sub-autor {
+    text-align: center;
+    width: 180px;
+}
+
+.img-aut {
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-aut:hover {
+    transform: scale(1.1);
+}
+
+.sub-autor h3 {
+    margin-top: 1rem;
+    font-size: 120%;
+    color: #333;
+}
+
+.sub-autor p {
+    color: #777;
+    font-size: 90%;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;
+    gap: 20rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Estilos para os botões */
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Remover barra de rolagem */
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Estilo para Livros (Venda e Empréstimos) */
+
+#tag1 {
+    background-color: gray;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+#tag2 {
+    background-color: gainsboro;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#tag3 {
+    background-color: gray;
+}
+
+.main-92 {
+    background-size: cover;
+    height: 92vh;
+}
+
+
+.box-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.livro {
+    background-color: white;
+    padding: 2vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 9vw;
+}
+
+.livro img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.livro h3 {
+    font-size: 120%;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.livro p {
+    font-size: 90%;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.box-menu {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#box1 {
+    background-color: #5a0f19;
+    opacity: 99%;
+    position: relative;
+    top: 10vh;
+    bottom: 12vh;
+    height: 30vh;
+    width: 40VW;
+    left: 48vw;
+    z-index: 999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2vh;
+}
+
+#box2 {
+    background-color: #5a0f19;
+    opacity: 99%;
+    position: relative;
+    top: 12vh;
+    bottom: 12vh;
+    height: 30vh;
+    width: 40VW;
+    left: 48vw;
+    z-index: 999;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 2vh;
+}
+
+#title1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#palta1 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-00 .autor, .box-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-00, .main-92 {
+        flex-direction: column;
+        align-items: center;
+    }
+}

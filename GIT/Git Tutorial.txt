@@ -1,0 +1,99 @@
+1 - Inicializar um Repositório Git,
+Se você ainda não tem um repositório Git inicializado:
+
+git init
+
+2 - Clonar um Repositório,
+Para clonar um repositório existente:
+
+git clone <URL do repositório>
+Por exemplo:
+
+git clone https://github.com/usuario/repo.git
+
+3 - Verificar o Status,
+Para verificar o status dos arquivos no seu repositório:
+
+git status
+
+4 - Adicionar Arquivos ao Staging Area,
+Para adicionar um arquivo específico:
+
+git add nome-do-arquivo
+
+Para adicionar todos os arquivos modificados:
+
+git add .
+
+5 - Fazer um Commit
+Para criar um commit com uma mensagem:
+
+git commit -m "Sua mensagem de commit aqui"
+
+6 - Enviar (Push) Alterações
+Para enviar suas alterações para o repositório remoto:
+
+git push origin nome-da-branch
+
+Por exemplo, se você estiver na branch main:
+
+git push origin main
+
+7 - Puxar (Pull) Alterações
+Para puxar as alterações do repositório remoto:
+
+git pull origin nome-da-branch
+
+Por exemplo, para a branch main:
+
+git pull origin main
+
+8 - Criar uma Nova Branch
+Para criar uma nova branch e mudar para ela:
+
+git checkout -b nome-da-nova-branch
+
+9 - Mudar de Branch
+Para mudar para uma branch existente:
+
+git checkout nome-da-branch
+
+10 - Mesclar Branches (Merge)
+Para mesclar uma branch com a branch atual:
+
+Primeiro, mude para a branch na qual você deseja mesclar as alterações:
+
+git checkout branch-alvo
+
+Em seguida, faça o merge com a branch desejada:
+
+git merge branch-de-origem
+
+11 - Reverter Alterações
+Para reverter um arquivo específico para o último commit:
+
+git checkout -- nome-do-arquivo
+
+Para reverter todos os arquivos modificados:
+
+git reset --hard
+
+Atenção: git reset --hard descarta todas as alterações não confirmadas e não pode ser desfeito.
+
+12 - Visualizar o Histórico de Commits
+Para ver o histórico de commits:
+
+git log
+
+13 - Criar uma Tag
+Para criar uma tag (marcador) para um commit específico:
+
+git tag -a v1.0 -m "Descrição da tag"
+
+Para listar todas as tags:
+
+git tag
+
+Para enviar tags para o repositório remoto:
+
+git push origin v1.0
