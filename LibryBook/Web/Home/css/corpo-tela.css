@@ -84,21 +84,25 @@ h2 {
 
 .carrossel-container {
     position: relative;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     overflow: hidden;
+    width: 100%; /* Garanta que tenha largura definida */
 }
 
 .carrossel {
     display: flex;
-    gap: 20rem;
-    overflow-x: hidden;
+    overflow-x: auto; /* Habilitar a rolagem horizontal */
     scroll-behavior: smooth;
+    gap: 8.8rem; /* Espaço entre os itens */
+    width: 100%;
 }
 
-/* Estilos para os botões */
+.sub-autor {
+    flex: none; /* Garante que os itens não encolham */
+    width: 150px; /* Defina a largura dos itens */
+    text-align: center;
+}
 
 .prev-btn, .next-btn {
     position: absolute;
